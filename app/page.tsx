@@ -20,8 +20,14 @@ export default function Home() {
                 Canadian high school student creating masterpieces with the most
                 bleeding-edge tools. Full-stack developer primarily focused on{" "}
                 <span className="font-bold text-[#347CC4]">TypeScript</span>,{" "}
-                <span className="font-bold text-white">Next ▲</span> and{" "}
-                <span className="font-bold text-[#6CD4E4]">Golang</span>.
+                <span className="font-bold text-black dark:text-white">
+                  Next ▲
+                </span>{" "}
+                and{" "}
+                <span className="font-bold text-[#74CCDC] dark:text-[#6CD4E4]">
+                  Golang
+                </span>
+                .
               </p>
             </div>
           </div>
