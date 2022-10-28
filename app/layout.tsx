@@ -20,7 +20,7 @@ export default function RootLayout({
           name="description"
           content="Canadian high school student creating masterpieces with the most bleeding-edge tools. Full-stack developer primarily focused on TypeScript, Next ▲ and Golang."
         />
-        <meta property="og:title" content="curse: Full-stack developer" />
+        <meta property="og:title" content="Curse: Full-stack developer" />
         <meta
           property="og:description"
           content="Canadian high school student creating masterpieces with the most bleeding-edge tools. Full-stack developer primarily focused on TypeScript, Next ▲ and Golang."
