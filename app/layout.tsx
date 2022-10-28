@@ -13,11 +13,21 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width" />
-        <link rel="shortcut icon" href="/img/icon.png" />
+        <link rel="icon" href="/img/icon.png" />
+        <meta charSet="utf-8" />
         <title>curse</title>
         <meta
           name="description"
           content="Canadian high school student creating masterpieces with the most bleeding-edge tools. Full-stack developer primarily focused on TypeScript, Next ▲ and Golang."
+        />
+        <meta property="og:title" content="curse: Full-stack developer" />
+        <meta
+          property="og:description"
+          content="Canadian high school student creating masterpieces with the most bleeding-edge tools. Full-stack developer primarily focused on TypeScript, Next ▲ and Golang."
+        />
+        <meta
+          property="og:image"
+          content="https://cursecode.me/img/banner.jpg"
         />
       </head>
       <body>
