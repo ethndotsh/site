@@ -1,9 +1,5 @@
-export async function SpotifyNowPlaying() {
-  const nowPlaying = await fetch("http://localhost:3000/api/spotify").then(
-    (res) => res.json()
-  );
+export async function SpotifyNowPlaying({nowPlaying}) {
 
-  console.log(nowPlaying);
 
   return (
     <div className="mt-1 text-sm">
