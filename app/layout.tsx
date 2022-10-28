@@ -32,7 +32,7 @@ export default function RootLayout({
       </head>
       <body>
         {children}
-        {/* <AnalyticsWrapper /> */}
+        <AnalyticsWrapper />
       </body>
     </html>
   );
