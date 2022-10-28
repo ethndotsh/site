@@ -11,7 +11,7 @@ export default function Home() {
               height="112"
               width="74"
               alt="profile picture"
-              src="/pfp.png"
+              src="/img/pfp.png"
               className="object-cover h-28 w-28 hidden md:block rounded-lg"
             />
             <div className="flex flex-col">
