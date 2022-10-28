@@ -1,6 +1,13 @@
+/*
+ NOTE: THIS IS TEMP A JS FILE UNTIL REACT AND NEXT
+ STOP SCREAMING AT ME ABOUT THE PROMISE<ELEMENT>
+*/
+
 import Image from "next/image";
 import { Suspense } from "react";
 import { SpotifyNowPlaying } from "./components/spotify";
+
+export const revalidate = 5;
 
 export default function Home() {
   return (
@@ -30,7 +37,7 @@ export default function Home() {
                 </span>
                 .
               </p>
-              <Suspense fallback={<p>Loading...</p>}>
+              <Suspense fallback={<p className="mt-1 text-sm">Loading...</p>}>
                 <SpotifyNowPlaying />
               </Suspense>
             </div>

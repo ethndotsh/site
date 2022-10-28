@@ -7,6 +7,7 @@ specifiers:
   '@types/react-dom': 18.0.8
   '@vercel/analytics': ^0.1.2
   autoprefixer: ^10.4.13
+  clsx: ^1.2.1
   eslint: 8.26.0
   eslint-config-next: 13.0.0
   next: 13.0.0
@@ -20,6 +21,7 @@ specifiers:
 dependencies:
   '@next/font': 13.0.0
   '@vercel/analytics': 0.1.2_react@18.2.0
+  clsx: 1.2.1
   next: 13.0.0_biqbaboplfbrettd7655fr4n2y
   querystring: 0.2.1
   react: 18.2.0
@@ -574,6 +576,11 @@ packages:
 
   /client-only/0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
+    dev: false
+
+  /clsx/1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
     dev: false
 
   /color-convert/2.0.1:

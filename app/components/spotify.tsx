@@ -1,14 +1,18 @@
-export async function SpotifyNowPlaying() {
-  const nowPlaying = await fetch("http://localhost:3000/api/spotify").then(
-    (res) => res.json()
-  );
+import { clsx } from "clsx";
 
-  console.log(nowPlaying);
+export async function SpotifyNowPlaying() {
+  const nowPlaying = await fetch("http://localhost:3000/api/spotify", {
+    next: { revalidate: 5 },
+    cache: "no-store",
+  }).then((res) => res.json());
 
   return (
     <div className="mt-1 text-sm">
       <svg
-        className="inline mr-1.5 -translate-y-[0.1rem] animate-bounce2"
+        className={clsx(
+          nowPlaying.isPlaying ? "animate-bounce-slow" : "",
+          "inline mr-1.5 -translate-y-[0.1rem]"
+        )}
         stroke="currentColor"
         fill="none"
         strokeWidth="2"
