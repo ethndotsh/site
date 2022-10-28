@@ -3,6 +3,10 @@ import { Suspense } from "react";
 import { SpotifyNowPlaying } from "./components/spotify";
 
 export default function Home() {
+  const nowPlaying = await fetch("http://localhost:3000/api/spotify").then(
+    (res) => res.json()
+  );
+  
   return (
     <div>
       <div className="flex h-screen w-screen justify-center items-center dark:bg-black dark:!text-white">
@@ -31,7 +35,7 @@ export default function Home() {
                 .
               </p>
               <Suspense fallback={<p>Loading...</p>}>
-                <SpotifyNowPlaying />
+                <SpotifyNowPlaying nowPlaying={nowPlaying}/>
               </Suspense>
             </div>
           </div>
