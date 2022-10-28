@@ -8,7 +8,7 @@ interface NowPlaying {
         compiledString: string
 }
 
-export async function SpotifyNowPlaying({nowPlaying: NowPlaying}) {
+export async function SpotifyNowPlaying({nowPlaying: any}) {
 
 
   return (
