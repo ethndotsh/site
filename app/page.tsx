@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Suspense } from "react";
 import { SpotifyNowPlaying } from "./components/spotify";
 
-export default function Home() {
+export default async function Home() {
   const nowPlaying = await fetch("http://localhost:3000/api/spotify").then(
     (res) => res.json()
   );
