@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
 
 export async function SpotifyNowPlaying() {
-  const nowPlaying = await fetch("http://localhost:3000/api/spotify", {
+  const nowPlaying = await fetch(`${process.env.URL}/api/spotify`, {
     next: { revalidate: 5 },
     cache: "no-store",
   }).then((res) => res.json());
