@@ -1,5 +1,6 @@
-import Head from "next/head";
 import Image from "next/image";
+import { Suspense } from "react";
+import { SpotifyNowPlaying } from "./components/spotify";
 
 export default function Home() {
   return (
@@ -8,8 +9,8 @@ export default function Home() {
         <div className="w-[60%] lg:w-[40%] flex gap-2 flex-col dark:bg-black dark:!text-white">
           <div className="flex gap-4 items-center">
             <Image
-              height="112"
-              width="74"
+              height="130"
+              width="80"
               alt="profile picture"
               src="/img/pfp.png"
               className="object-cover h-28 w-28 hidden md:block rounded-lg"
@@ -29,6 +30,9 @@ export default function Home() {
                 </span>
                 .
               </p>
+              <Suspense fallback={<p>Loading...</p>}>
+                <SpotifyNowPlaying />
+              </Suspense>
             </div>
           </div>
           <div className="flex gap-2 items-center">
