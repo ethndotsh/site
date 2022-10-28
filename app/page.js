@@ -44,7 +44,7 @@ export default function Home() {
           </div>
           <div className="flex gap-2 items-center">
             <a href="https://github.com/cursecodes">
-              <div className="text-black dark:text-white dark:hover:bg-white dark:hover:text-black dark:bg-opacity-100 text-xl hover:bg-[#4501ad] p-2 rounded-md transition-all duration-300 hover:text-white bg-opacity-70">
+              <div className="text-black dark:text-white dark:hover:bg-white dark:hover:text-black dark:bg-opacity-100 text-xl hover:bg-[#792DEC] p-2 rounded-md transition-all duration-300 hover:text-white bg-opacity-70">
                 <svg
                   stroke="currentColor"
                   fill="none"
@@ -61,7 +61,7 @@ export default function Home() {
               </div>
             </a>
             <a href="https://www.buymeacoffee.com/cursecode">
-              <div className="text-black dark:text-white dark:hover:bg-white dark:hover:text-black dark:bg-opacity-100 text-xl hover:bg-[#4501ad] p-2 rounded-md transition-all duration-300 hover:text-white bg-opacity-70">
+              <div className="text-black dark:text-white dark:hover:bg-white dark:hover:text-black dark:bg-opacity-100 text-xl hover:bg-[#792DEC] p-2 rounded-md transition-all duration-300 hover:text-white bg-opacity-70">
                 <svg
                   stroke="currentColor"
                   fill="none"
@@ -79,7 +79,7 @@ export default function Home() {
               </div>
             </a>
             <a href="mailto:hi@cursecode.me">
-              <div className="text-black dark:text-white dark:hover:bg-white dark:hover:text-black dark:bg-opacity-100 text-xl hover:bg-[#4501ad] p-2 rounded-md transition-all duration-300 hover:text-white bg-opacity-70">
+              <div className="text-black dark:text-white dark:hover:bg-white dark:hover:text-black dark:bg-opacity-100 text-xl hover:bg-[#792DEC] p-2 rounded-md transition-all duration-300 hover:text-white bg-opacity-70">
                 <svg
                   stroke="currentColor"
                   fill="none"
