@@ -50,7 +50,12 @@ export default async function spotify(req: NextApiRequest, res: NextApiResponse)
         return res.status(200).json({ isPlaying: false });
     }
 
-    console.log(song)
+
+    // vercel only logs
+    if (process.env.VERCEL) {
+        console.log(song)
+    }
+
 
     const isPlaying = song.is_playing;
     const title = song.item.name;

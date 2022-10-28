@@ -1,10 +1,13 @@
 import { clsx } from "clsx";
 
 export async function SpotifyNowPlaying() {
-  const nowPlaying = await fetch(`${process.env.URL}/api/spotify`, {
-    next: { revalidate: 5 },
-    cache: "no-store",
-  }).then((res) => res.json());
+  const nowPlaying = await fetch(
+    `${process.env.URL || process.env.VERCEL_URL}/api/spotify`,
+    {
+      next: { revalidate: 5 },
+      cache: "no-store",
+    }
+  ).then((res) => res.json());
 
   return (
     <div className="mt-1 text-sm">
