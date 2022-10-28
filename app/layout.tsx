@@ -12,6 +12,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="viewport" content="width=device-width" />
         <link rel="shortcut icon" href="/img/icon.png" />
         <title>curse</title>
         <meta
