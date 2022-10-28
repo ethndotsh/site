@@ -29,7 +29,8 @@ export async function SpotifyNowPlaying() {
       </svg>
       {nowPlaying.isPlaying ? (
         <a href={nowPlaying.songUrl}>
-          Listening to {nowPlaying.compiledString}
+          Listening to <span className="font-medium">{nowPlaying.title}</span>{" "}
+          by <span className="font-medium">{nowPlaying.artist}</span>
         </a>
       ) : (
         <span>Not listening to anything</span>
