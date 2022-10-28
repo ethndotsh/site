@@ -1,4 +1,14 @@
-export async function SpotifyNowPlaying({nowPlaying}) {
+interface NowPlaying {
+           album: string,
+        albumImageUrl: string,
+        artist: string,
+        isPlaying: boolean,
+        songUrl: string,
+        title: string,
+        compiledString: string
+}
+
+export async function SpotifyNowPlaying({nowPlaying: NowPlaying}) {
 
 
   return (
