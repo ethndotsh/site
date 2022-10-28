@@ -11,7 +11,7 @@ export const revalidate = 5;
 
 export default function Home() {
   return (
-    <div>
+    <div className="dark">
       <div className="flex h-screen w-screen justify-center items-center dark:bg-black dark:!text-white">
         <div className="w-[60%] lg:w-[40%] flex gap-2 flex-col dark:bg-black dark:!text-white">
           <div className="flex gap-4 items-center">
@@ -19,8 +19,8 @@ export default function Home() {
               height="130"
               width="80"
               alt="profile picture"
-              src="/img/pfp.png"
-              className="object-cover h-28 w-28 hidden md:block rounded-lg"
+              src="/img/pfp.jpg"
+              className="object-cover h-32 w-32 hidden md:block rounded-lg"
             />
             <div className="flex flex-col">
               <h1 className="text-2xl">curse.</h1>
