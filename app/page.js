@@ -11,7 +11,7 @@ export const revalidate = 5;
 
 export default function Home() {
   return (
-    <div>
+    <div className="dark">
       <div className="flex h-screen w-screen justify-center items-center dark:bg-black dark:!text-white">
         <div className="w-[60%] lg:w-[40%] flex gap-2 flex-col dark:bg-black dark:!text-white">
           <div className="flex gap-4 items-center">
