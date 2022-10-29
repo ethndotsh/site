@@ -31,7 +31,7 @@ export async function SpotifyNowPlaying() {
         <circle cx="18" cy="16" r="3" />
       </svg>
       {nowPlaying.isPlaying ? (
-        <a href={nowPlaying.songUrl}>
+        <a href={nowPlaying.songUrl} target="_blank" rel="noreferrer">
           Listening to{" "}
           <span className="font-medium">
             {nowPlaying.title || "Stranger Things Have Happened"}
