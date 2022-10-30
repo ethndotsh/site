@@ -1,6 +1,10 @@
 import { clsx } from "clsx";
 
-export async function SpotifyNowPlaying() {
+function asyncComponent<T, R>(fn: (arg: T) => Promise<R>): (arg: T) => R {
+  return fn as (arg: T) => R;
+}
+
+export const SpotifyNowPlaying = asyncComponent(async () => {
   const nowPlaying = await fetch(
     `${process.env.URL || process.env.VERCEL_URL}/api/spotify`,
     {
@@ -46,4 +50,4 @@ export async function SpotifyNowPlaying() {
       )}
     </div>
   );
-}
+});

@@ -1,8 +1,3 @@
-/*
- NOTE: THIS IS TEMP A JS FILE UNTIL REACT AND NEXT
- STOP SCREAMING AT ME ABOUT THE PROMISE<ELEMENT>
-*/
-
 import Image from "next/image";
 import { Suspense } from "react";
 import { SpotifyNowPlaying } from "./components/spotify";
