@@ -31,7 +31,10 @@ export default function RootLayout({
         />
       </head>
       <body>
-        {children}
+        <div className="dark">
+          {children}
+        </div>
+        
         <AnalyticsWrapper />
       </body>
     </html>
